@@ -1,0 +1,48 @@
+@import '../../variables';
+
+.navbar {
+  width: 14rem;
+  //background-color: #222;
+  background-color: var(--bg-color-800);
+  flex-shrink: 0;
+  border-right: 1px solid var(--bg-color-700);
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  width: 8rem;
+  list-style-type: none;
+
+  &__item {
+    border-bottom: var(--bg-color-700) solid 1px;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    margin-left: 1rem;
+    color: var(--bg-color-50);
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--skin-color-500);
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

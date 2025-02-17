@@ -1,0 +1,26 @@
+.about {
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  &__text {
+  }
+}
+
+.avatar {
+  &__img {
+    margin-top: 1rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.personal {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
