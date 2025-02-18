@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import Navbar from "./components/navbar/Navbar.vue";
-import Main from "./components/main/Main.vue";
+import Navbar from "./components/Navbar.vue";
+import Content from "./components/content/Content.vue";
 </script>
 
 <template>
   <Navbar/>
-  <Main/>
+  <Content/>
 </template>
 
-<style scoped>
+<style lang="scss">
+@use 'styles/index';
 </style>

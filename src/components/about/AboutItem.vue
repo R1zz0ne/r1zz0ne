@@ -15,6 +15,5 @@ interface PersonalItem {
 const {label, text} = defineProps<PersonalItem>();
 </script>
 
-<style scoped lang="scss">
-@import "personal__item";
+<style scoped>
 </style>

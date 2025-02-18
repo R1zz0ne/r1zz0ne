@@ -1,5 +1,5 @@
 <template>
-  <div class="main main__container">
+  <div class="content content__container">
     <RouterView/>
   </div>
 </template>
@@ -8,6 +8,5 @@
 
 </script>
 
-<style scoped lang="scss">
-@import "main";
+<style scoped>
 </style>

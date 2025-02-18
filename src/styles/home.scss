@@ -1,0 +1,26 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__container {
+    margin: 0 3.5rem;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  &__info {
+    margin: auto;
+  }
+
+  &__img {
+    img {
+      width: 15rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
