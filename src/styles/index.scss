@@ -2,26 +2,23 @@
 @use 'about';
 @use 'content';
 @use 'navbar';
-@use 'personal__item';
 @use 'home';
 
+@import url('https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100..900;1,100..900');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-
-  color-scheme: light dark;
-  color: var(--bg-color-50);
-  background-color: var(--bg-color-900);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 body {
-  //display: flex;
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
@@ -32,11 +29,4 @@ body {
   flex-direction: row;
   height: 100vh;
   margin: 0 auto;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
 }

@@ -1,4 +1,81 @@
+
 :root {
+  --bg-color-50: #0B0D0E;
+  --bg-color-100: #222;
+  --bg-color-200: #32383E;
+  --bg-color-300: #555E68;
+  --bg-color-400: #636B74;
+  --bg-color-500: #9FA6AD;
+  --bg-color-600: #CDD7E1;
+  --bg-color-700: #DDE7EE;
+  --bg-color-800: #F0F4F8;
+  --bg-color-900: #FBFCFE;
+
+  --bg-color-navbar: #F0F4F8;
+  --bg-color-content: #CDD7E1;
+  --border-color: #9FA6AD;
+  --text-color-title: #0B0D0E;
+  --text-color: #636B74;
+  --skin-color: #0B6BCB;;
+
+  --danger-50: #240505;
+  --danger-100: #430A0A;
+  --danger-200: #7D1212;
+  --danger-300: #A51818;
+  --danger-400: #C41C1C;
+  --danger-500: #E47474;
+  --danger-600: #F09898;
+  --danger-700: #F7C5C5;
+  --danger-800: #FCE4E4;
+  --danger-900: #FEF6F6;
+
+  --neutral-50: #0B0D0E;
+  --neutral-100: #171A1C;
+  --neutral-200: #32383E;
+  --neutral-300: #555E68;
+  --neutral-400: #636B74;
+  --neutral-500: #9FA6AD;
+  --neutral-600: #CDD7E1;
+  --neutral-700: #DDE7EE;
+  --neutral-800: #F0F4F8;
+  --neutral-900: #FBFCFE;
+
+  --primary-50: #051423;
+  --primary-100: #0A2744;
+  --primary-200: #12467B;
+  --primary-300: #185EA5;
+  --primary-400: #0B6BCB;
+  --primary-500: #4393E4;
+  --primary-600: #97C3F0;
+  --primary-700: #C7DFF7;
+  --primary-800: #E3EFFB;
+  --primary-900: #EDF5FD;
+
+  --success-50: #021D02;
+  --success-100: #042F04;
+  --success-200: #0A470A;
+  --success-300: #136C13;
+  --success-400: #1F7A1F;
+  --success-500: #51BC51;
+  --success-600: #A1E8A1;
+  --success-700: #C7F7C7;
+  --success-800: #E3FBE3;
+  --success-900: #F6FEF6;
+
+  --warning-50: #1D1002;
+  --warning-100: #2E1B05;
+  --warning-200: #492B08;
+  --warning-300: #72430D;
+  --warning-400: #9A5B13;
+  --warning-450: #BC7524;
+  --warning-500: #EA9A3E;
+  --warning-600: #F3C896;
+  --warning-700: #FCE1C2;
+  --warning-800: #FDF0E1;
+  --warning-900: #FEFAF6;
+}
+
+[data-theme="dark"] {
   --bg-color-50: #FBFCFE;
   --bg-color-100: #F0F4F8;
   --bg-color-200: #DDE7EE;
@@ -10,8 +87,12 @@
   --bg-color-800: #222;
   --bg-color-900: #0B0D0E;
 
-  --skin-color-500: #0B6BCB;
-
+  --bg-color-navbar: #222;
+  --bg-color-content: #0B0D0E;
+  --border-color: #32383E;
+  --text-color-title: #FBFCFE;
+  --text-color: #9FA6AD;
+  --skin-color: #0B6BCB;
 
   --danger-50: #FEF6F6;
   --danger-100: #FCE4E4;

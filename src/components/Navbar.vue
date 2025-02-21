@@ -1,25 +1,25 @@
 <template>
-  <nav class="navbar">
-    <div class="navbar__container">
+  <nav class="navbar navbar__container">
+    <div class="navbar__logo">
+      <RouterLink to="/">R1zz0ne</RouterLink>
+    </div>
+    <div class="navbar__menu-container">
       <ul class="menu">
-        <li class="menu__item">
-          <RouterLink to="/" class="menu__link">Главная</RouterLink>
-        </li>
-        <li class="menu__item">
-          <RouterLink to="/about" class="menu__link">Обо мне</RouterLink>
-        </li>
-        <li class="menu__item">
-          <RouterLink to="/technologies" class="menu__link">Технологии</RouterLink>
-        </li>
-        <li class="menu__item">
-          <RouterLink to="/contacts" class="menu__link">Контакты</RouterLink>
-        </li>
+        <MenuItem path="/" name="Главная"/>
+        <MenuItem path="/about" name="Обо мне"/>
+        <MenuItem path="/technologies" name="Технологии"/>
+        <MenuItem path="/contacts" name="Контакты"/>
       </ul>
+    </div>
+    <div class="navbar__footer">
+      <span>© 2025 R1zz0ne</span>
     </div>
   </nav>
 </template>
 
 <script setup lang="ts">
+
+import MenuItem from "./navbar/MenuItem.vue";
 </script>
 
 <style scoped>
