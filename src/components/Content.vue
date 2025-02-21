@@ -1,18 +1,16 @@
 <template>
   <div class="content content__container">
-<!--    <div class="content__container">-->
-      <RouterView/>
-      <ThemeBtn class="content__theme-btn" :onClick="isChangeTheme">
-        <SVGSun
-            v-if="theme === 'dark'"
-            background="var(--bg-color-navbar)"
-            color="var(--text-color-title)"/>
-        <SVGMoon
-            v-if="theme === 'light'"
-            background="var(--bg-color-navbar)"
-            color="var(--text-color-title)"/>
-      </ThemeBtn>
-<!--    </div>-->
+    <RouterView/>
+    <ThemeBtn class="content__theme-btn" :onClick="isChangeTheme">
+      <SVGSun
+          v-if="theme === 'dark'"
+          bg="var(--bg-color-navbar)"
+          color="var(--text-color-title)"/>
+      <SVGMoon
+          v-if="theme === 'light'"
+          bg="var(--bg-color-navbar)"
+          color="var(--text-color-title)"/>
+    </ThemeBtn>
   </div>
 </template>
 

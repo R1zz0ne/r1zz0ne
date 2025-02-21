@@ -3,7 +3,7 @@
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
-      <rect width="24" height="24" :fill="background"></rect>
+      <rect width="24" height="24" :fill="bg"></rect>
       <path fill-rule="evenodd" clip-rule="evenodd"
             d="M8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12Z"
             :fill="color"></path>
@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-const {background, color} = defineProps<{ background: string, color: string }>();
+const {bg, color} = defineProps<{ bg: string, color: string }>();
 </script>
 
 <style scoped>
