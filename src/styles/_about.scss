@@ -1,7 +1,7 @@
+@use 'mixins' as mixins;
+
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.flex-center;
 
   &__container {
     margin: 0 3.5rem;
