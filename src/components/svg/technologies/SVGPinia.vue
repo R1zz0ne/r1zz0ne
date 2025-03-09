@@ -83,22 +83,22 @@
     <defs>
       <linearGradient id="paint0_linear" x1="68.5172" y1="90.0774" x2="85.0979" y2="170.543"
                       gradientUnits="userSpaceOnUse">
-        <stop stop-color="#52CE63"></stop>
+        <stop offset="0" stop-color="#52CE63"></stop>
         <stop offset="1" stop-color="#51A256"></stop>
       </linearGradient>
       <linearGradient id="paint1_linear" x1="359.841" y1="134.702" x2="279.366" y2="151.265"
                       gradientUnits="userSpaceOnUse">
-        <stop stop-color="#52CE63"></stop>
+        <stop offset="0" stop-color="#52CE63"></stop>
         <stop offset="1" stop-color="#51A256"></stop>
       </linearGradient>
       <linearGradient id="paint2_linear" x1="219.235" y1="22.7747" x2="203.754" y2="148.86"
                       gradientUnits="userSpaceOnUse">
-        <stop stop-color="#8AE99C"></stop>
+        <stop offset="0" stop-color="#8AE99C"></stop>
         <stop offset="1" stop-color="#52CE63"></stop>
       </linearGradient>
       <linearGradient id="paint3_linear" x1="196.803" y1="244.222" x2="171.815" y2="518.625"
                       gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFE56C"></stop>
+        <stop offset="0" stop-color="#FFE56C"></stop>
         <stop offset="1" stop-color="#FFC63A"></stop>
       </linearGradient>
       <clipPath id="eye-right-mask">
