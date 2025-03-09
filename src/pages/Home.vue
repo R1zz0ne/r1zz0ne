@@ -9,7 +9,7 @@
         </div>
         <div class="content__row">
           <p class="content__text">Пишу функциональные web-приложения (Single Page Application). Стремлюсь к
-            профессиональным знаниям во Vue.</p>
+            профессиональным знаниям во Frontend разработке.</p>
         </div>
       </div>
       <div class="home__img">

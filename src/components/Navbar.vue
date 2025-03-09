@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar__container">
+  <nav class="navbar navbar__container" :class="{'navbar__container--visible': configStore.isVisibleNavbar}">
     <div class="navbar__logo">
       <RouterLink to="/">R1zz0ne</RouterLink>
     </div>
@@ -18,8 +18,10 @@
 </template>
 
 <script setup lang="ts">
-
 import MenuItem from "./navbar/MenuItem.vue";
+import {useConfigStore} from "../store/ConfigStore.ts";
+
+const configStore = useConfigStore();
 </script>
 
 <style scoped>

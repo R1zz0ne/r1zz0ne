@@ -14,7 +14,10 @@
 
   &__container {
     position: fixed;
+  }
 
+  &__container--visible {
+    left: 0;
   }
 
   &__logo {
@@ -84,5 +87,9 @@
 @media (max-width: 1199px) {
   .navbar {
     left: -17rem;
+
+    &__container--visible {
+      left: 0;
+    }
   }
 }

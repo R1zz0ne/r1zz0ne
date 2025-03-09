@@ -1,39 +1,31 @@
 <template>
-  <div class="content content__container">
+  <div class="content content__container" :class="{'content__container--visible': configStore.isVisibleNavbar}">
     <RouterView/>
-    <ThemeBtn class="content__theme-btn" :onClick="isChangeTheme">
-      <SVGSun
-          v-if="theme === 'dark'"
-          bg="var(--bg-color-navbar)"
-          color="var(--text-color-title)"/>
-      <SVGMoon
-          v-if="theme === 'light'"
-          bg="var(--bg-color-navbar)"
-          color="var(--text-color-title)"/>
-    </ThemeBtn>
+    <VisibleNavbarBtn class="content__visible-navbar-btn" :class="{'open': configStore.isVisibleNavbar}"/>
+    <ThemeBtn class="content__theme-btn" :onClick="isChangeTheme" :theme="configStore.theme"/>
   </div>
 </template>
 
 <script setup lang="ts">
 import ThemeBtn from "./ThemeBtn.vue";
-import {ref, watchEffect} from "vue";
-import SVGSun from "./svg/SVGSun.vue";
-import SVGMoon from "./svg/SVGMoon.vue";
+import {watchEffect} from "vue";
+import VisibleNavbarBtn from "./VisibleNavbarBtn.vue";
+import {useConfigStore} from "../store/ConfigStore.ts";
 
-const theme = ref<'light' | 'dark'>('light');
+const configStore = useConfigStore();
 
 const isChangeTheme = () => {
-  if (theme.value === 'light') {
-    theme.value = 'dark';
+  if (configStore.theme === 'light') {
+    configStore.setTheme('dark');
   } else {
-    theme.value = 'light';
+    configStore.setTheme('light');
   }
 }
 
 const appDiv = document.getElementById('app');
 watchEffect(() => {
   if (appDiv) {
-    if (theme.value === 'dark') {
+    if (configStore.theme === 'dark') {
       appDiv.setAttribute('data-theme', 'dark');
     } else {
       appDiv.removeAttribute('data-theme');

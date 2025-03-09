@@ -5,6 +5,8 @@
 @use 'content';
 @use 'navbar';
 @use 'home';
+@use 'contacts';
+@use 'techbologies';
 
 @import url('https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100..900;1,100..900');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
@@ -32,3 +34,9 @@ body {
   height: 100vh;
   margin: 0 auto;
 }
+
+//@media (max-width: 1199px) {
+//  #app {
+//    display: block;
+//  }
+//}
