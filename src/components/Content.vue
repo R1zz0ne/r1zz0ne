@@ -1,7 +1,6 @@
 <template>
   <div class="content content__container" :class="{'content__container--visible': configStore.isVisibleNavbar}">
     <RouterView/>
-    <VisibleNavbarBtn class="content__visible-navbar-btn" :class="{'open': configStore.isVisibleNavbar}"/>
     <ThemeBtn class="content__theme-btn" :onClick="isChangeTheme" :theme="configStore.theme"/>
   </div>
 </template>
@@ -9,7 +8,6 @@
 <script setup lang="ts">
 import ThemeBtn from "./ThemeBtn.vue";
 import {watchEffect} from "vue";
-import VisibleNavbarBtn from "./VisibleNavbarBtn.vue";
 import {useConfigStore} from "../store/ConfigStore.ts";
 
 const configStore = useConfigStore();

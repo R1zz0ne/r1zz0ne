@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docker-dev-up": "docker-compose -f docker-compose.dev.yml up --build -d",
+    "docker-dev-down": "docker-compose -f docker-compose.dev.yml down",
+    "docker-prod-up": "docker-compose -f docker-compose.prod.yml up --build -d",
+    "docker-prod-down": "docker-compose -f docker-compose.prod.yml down"
   },
   "dependencies": {
     "pinia": "^3.0.1",

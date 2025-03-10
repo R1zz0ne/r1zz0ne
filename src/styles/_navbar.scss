@@ -13,7 +13,7 @@
   transition: 0.3s ease-in-out;
 
   &__container {
-    position: fixed;
+    position: relative;
   }
 
   &__container--visible {
@@ -46,33 +46,70 @@
 
   &__menu-container {
   }
+
+  &__visible-btn {
+    transition: all 0.3s ease-in-out;
+    display: none;
+    //visibility: hidden;
+    position: absolute;
+    top: 1.5rem;
+    left: 18rem;
+    width: 2.75rem;
+    height: 2.5rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color-navbar);
+    border-radius: 15%;
+    cursor: pointer;
+    z-index: 999;
+
+    svg {
+      width: 1.75rem;
+    }
+
+    &.open {
+      transition: all 0.3s ease-in-out;
+      left: 18rem;
+    }
+  }
 }
 
 .menu {
   padding: 0;
   margin: 0;
-  width: 8rem;
+  width: 9.5rem;
   list-style-type: none;
 
   &__item {
     border-bottom: var(--border-color) solid 1px;
     padding-bottom: 0.25rem;
     margin-bottom: 1rem;
+
+    &:hover {
+      cursor: pointer;
+
+      .menu__link {
+        color: var(--skin-color);
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__icon {
+    width: 1.25rem;
+    height: 1.25rem;
   }
 
   &__link {
     margin-left: 1rem;
     color: var(--text-color-title);
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     width: fit-content;
     font-size: 1rem;
     font-weight: 600;
-
-    &:hover {
-      color: var(--skin-color);
-      opacity: 0.8;
-    }
+    line-height: 1.5rem;
 
     &:active {
       opacity: 0.6;
@@ -90,6 +127,10 @@
 
     &__container--visible {
       left: 0;
+    }
+
+    &__visible-btn {
+      display: inline-block;
     }
   }
 }

@@ -23,8 +23,6 @@
 import TechnologiesItem from "../components/technologies/TechnologiesItem.vue";
 import {getColorMix, getGradient} from "../utils/utils.ts";
 
-console.log(getGradient('to bottom right', 'red', 'green'))
-
 const dataTech = [
   {
     name: "Vue3",
@@ -137,8 +135,8 @@ const dataTech = [
   {
     name: "Git",
     description: "Контроль и надежность разработки",
-    icon: "SVGGithub",
-    color: getColorMix("#000000", 20),
+    icon: "SVGGit",
+    color: getColorMix("#EE513B", 20),
   }
 ];
 </script>
