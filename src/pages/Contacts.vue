@@ -1,16 +1,18 @@
 <template>
   <section class="contacts">
     <div class="contacts__container">
-      <div class="content__row">
-        <h2 class="content__title">Контакты</h2>
+      <div class="content__row content__row--title">
+        <h2 class="content__title">{{ contactsStore.pageName }}</h2>
       </div>
-      <div class="content__row">
-        <h2 class="content__subtitle content__subtitle--center">У вас есть вопросы?</h2>
+      <div class="content__row content__row--indent">
+        <h2 class="content__subtitle content__subtitle--center">{{ contactsStore.title }}</h2>
       </div>
-      <div class="content__row contacts__body">
-        <ContactsItem name="Телеграм" value="@R1zz0ne" componentName="SVGTelegram"/>
-        <ContactsItem name="Email" value="aleksei240398@gmail.com" componentName="SVGEmail"/>
-        <ContactsItem name="GitHub" value="R1zz0ne" componentName="SVGGithub"/>
+      <div class="content__row contacts__body content__row--indent">
+        <ContactsItem
+            v-for="item in contactsStore.contacts"
+            :name="item.name"
+            :value="item.value"
+            :componentName="item.svg"/>
       </div>
     </div>
   </section>
@@ -18,6 +20,9 @@
 
 <script setup lang="ts">
 import ContactsItem from "../components/contacts/ContactsItem.vue";
+import {useContactsStore} from "../store/ContactsStore.ts";
+
+const contactsStore = useContactsStore();
 </script>
 
 <style scoped>

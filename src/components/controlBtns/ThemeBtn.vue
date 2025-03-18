@@ -10,8 +10,8 @@
 </template>
 
 <script setup lang="ts">
-import SVGSun from "./svg/SVGSun.vue";
-import SVGMoon from "./svg/SVGMoon.vue";
+import SVGSun from "../svg/SVGSun.vue";
+import SVGMoon from "../svg/SVGMoon.vue";
 
 const {onClick, theme} = defineProps<{ onClick: () => void, theme: string }>();
 </script>

@@ -21,7 +21,7 @@
 <script setup lang="ts">
 import MenuItem from "./navbar/MenuItem.vue";
 import {useConfigStore} from "../store/ConfigStore.ts";
-import VisibleNavbarBtn from "./VisibleNavbarBtn.vue";
+import VisibleNavbarBtn from "./controlBtns/VisibleNavbarBtn.vue";
 
 const configStore = useConfigStore();
 </script>

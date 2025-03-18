@@ -6,9 +6,9 @@
 </template>
 
 <script setup lang="ts">
-import {useConfigStore} from "../store/ConfigStore.ts";
-import SVGMenu from "./svg/SVGMenu.vue";
-import SVGClose from "./svg/SVGClose.vue";
+import {useConfigStore} from "../../store/ConfigStore.ts";
+import SVGMenu from "../svg/SVGMenu.vue";
+import SVGClose from "../svg/SVGClose.vue";
 
 const configStore = useConfigStore();
 </script>

@@ -5,7 +5,7 @@
   height: 100%;
 
   &__container {
-    margin: 0 3.5rem;
+    margin: 0 3rem;
     width: 100%;
     max-width: 1100px;
     display: flex;
@@ -21,6 +21,63 @@
     img {
       width: 15rem;
       border-radius: 0.5rem;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-color-subtitle);
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: var(--text-color-subtitle);
+
+    span {
+      color: var(--skin-color);
+    }
+  }
+
+  &__text {
+    font-size: 1.25rem;
+  }
+
+  &__name {
+    color: var(--skin-color);
+  }
+
+  &__typing {
+
+  }
+
+  &__cursor {
+    margin-left: 0.1rem;
+    border-right: 0.2rem solid var(--skin-color);
+  }
+
+  &__cursor--blink {
+    animation: blink 1s infinite;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 990px) {
+  .home {
+    &__img {
+      display: none;
     }
   }
 }

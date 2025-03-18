@@ -15,9 +15,14 @@
   --bg-color-content: #CDD7E1;
   --border-color: #9FA6AD;
   --text-color-title: #0B0D0E;
-  --text-color: #636B74;
+  --text-color-subtitle: #32383E;
+  --text-color: #555E68;
   --skin-color: #0B6BCB;
   --technologies-name: #504e70;
+  --skin-red: #ec1839;
+  --skin-green: #37b182;
+  --skin-blue: #0B6BCB;
+  --skin-orange: #fa5b0f;
 
   --danger-50: #240505;
   --danger-100: #430A0A;
@@ -77,17 +82,6 @@
 }
 
 [data-theme="dark"] {
-  --bg-color-50: #FBFCFE;
-  --bg-color-100: #F0F4F8;
-  --bg-color-200: #DDE7EE;
-  --bg-color-300: #CDD7E1;
-  --bg-color-400: #9FA6AD;
-  --bg-color-500: #636B74;
-  --bg-color-600: #555E68;
-  --bg-color-700: #32383E;
-  --bg-color-800: #222;
-  --bg-color-900: #0B0D0E;
-
   --bg-color-navbar: #222;
   --bg-color-content: #0B0D0E;
   --border-color: #32383E;
@@ -95,60 +89,20 @@
   --text-color: #9FA6AD;
   --skin-color: #0B6BCB;
   --technologies-name: #e9e9e9;
+}
 
-  --danger-50: #FEF6F6;
-  --danger-100: #FCE4E4;
-  --danger-200: #F7C5C5;
-  --danger-300: #F09898;
-  --danger-400: #E47474;
-  --danger-500: #C41C1C;
-  --danger-600: #A51818;
-  --danger-700: #7D1212;
-  --danger-800: #430A0A;
-  --danger-900: #240505;
+[data-skin="red"] {
+  --skin-color: var(--skin-red);
+}
 
-  --neutral-50: #FBFCFE;
-  --neutral-100: #F0F4F8;
-  --neutral-200: #DDE7EE;
-  --neutral-300: #CDD7E1;
-  --neutral-400: #9FA6AD;
-  --neutral-500: #636B74;
-  --neutral-600: #555E68;
-  --neutral-700: #32383E;
-  --neutral-800: #171A1C;
-  --neutral-900: #0B0D0E;
+[data-skin="blue"] {
+  --skin-color: var(--skin-blue);
+}
 
-  --primary-50: #EDF5FD;
-  --primary-100: #E3EFFB;
-  --primary-200: #C7DFF7;
-  --primary-300: #97C3F0;
-  --primary-400: #4393E4;
-  --primary-500: #0B6BCB;
-  --primary-600: #185EA5;
-  --primary-700: #12467B;
-  --primary-800: #0A2744;
-  --primary-900: #051423;
+[data-skin="green"] {
+  --skin-color: var(--skin-green);
+}
 
-  --success-50: #F6FEF6;
-  --success-100: #E3FBE3;
-  --success-200: #C7F7C7;
-  --success-300: #A1E8A1;
-  --success-400: #51BC51;
-  --success-500: #1F7A1F;
-  --success-600: #136C13;
-  --success-700: #0A470A;
-  --success-800: #042F04;
-  --success-900: #021D02;
-
-  --warning-50: #FEFAF6;
-  --warning-100: #FDF0E1;
-  --warning-200: #FCE1C2;
-  --warning-300: #F3C896;
-  --warning-400: #EA9A3E;
-  --warning-450: #BC7524;
-  --warning-500: #9A5B13;
-  --warning-600: #72430D;
-  --warning-700: #492B08;
-  --warning-800: #2E1B05;
-  --warning-900: #1D1002;
+[data-skin="orange"] {
+  --skin-color: var(--skin-orange);
 }

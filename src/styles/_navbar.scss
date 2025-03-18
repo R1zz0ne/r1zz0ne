@@ -50,10 +50,9 @@
   &__visible-btn {
     transition: all 0.3s ease-in-out;
     display: none;
-    //visibility: hidden;
     position: absolute;
-    top: 1.5rem;
-    left: 18rem;
+    top: 2.4rem;
+    left: 18.5rem;
     width: 2.75rem;
     height: 2.5rem;
     border: 1px solid var(--border-color);
@@ -68,7 +67,7 @@
 
     &.open {
       transition: all 0.3s ease-in-out;
-      left: 18rem;
+      left: 18.5rem;
     }
   }
 }

@@ -1,26 +1,23 @@
 <template>
   <section class="about">
     <div class="about__container">
-      <div class="content__row">
-        <h2 class="content__title">Обо мне</h2>
+      <div class="content__row content__row--title">
+        <h2 class="content__title">{{ aboutStore.pageName }}</h2>
       </div>
-      <div class="content__row">
+      <div class="content__row content__row--indent">
         <div class="about__text">
-          <h3 class="content__subtitle">Меня зовут Алексей Бердников, хочу стать Frontend-разработчиком</h3>
-          <p class="content__text">Это PET-проект, в рамках которого я учусь работать с препроцессором scss,
-            создам адаптивную верстку с использованием media запросов, а также практикуюсь в верстке с использованием
-            БЭМ методологии. Дополнительно хочу сделать выбор цветовой схемы: светлая или темная. Далее этот проект
-            перерастет в собственный сайт
-          </p>
+          <h3 class="content__subtitle">{{ aboutStore.title }}</h3>
+          <p class="content__text">{{ aboutStore.text }} </p>
         </div>
       </div>
-      <div class="content__row">
+      <div class="content__row content__row--indent">
         <div class="personal">
-          <AboutItem label="День рождения" text="24 марта 1998 г."/>
-          <AboutItem label="Возраст" text="26"/>
-          <AboutItem label="Город" text="Уфа"/>
-          <AboutItem label="Статус работы" text="В активном поиске"/>
+          <AboutItem v-for="item in aboutStore.personalInfo" :label="item.nameField" :text="item.value"/>
         </div>
+      </div>
+      <div class="content__row content__row--indent content__row--nogap">
+        <AboutTimeline name="Образование" :data="aboutStore.educationInfo"/>
+        <AboutTimeline name="Опыт" :data="aboutStore.experienceInfo"/>
       </div>
     </div>
   </section>
@@ -28,6 +25,10 @@
 
 <script setup lang="ts">
 import AboutItem from "../components/about/AboutItem.vue";
+import {useAboutStore} from "../store/AboutStore.ts";
+import AboutTimeline from "../components/AboutTimeline.vue";
+
+const aboutStore = useAboutStore();
 </script>
 
 <style>
