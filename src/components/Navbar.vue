@@ -5,10 +5,12 @@
     </div>
     <div class="navbar__menu-container">
       <ul class="menu">
-        <MenuItem path="/" name="Главная" componentName="SVGHome"/>
-        <MenuItem path="/about" name="Обо мне" componentName="SVGUser"/>
-        <MenuItem path="/technologies" name="Технологии" componentName="SVGBrain"/>
-        <MenuItem path="/contacts" name="Контакты" componentName="SVGComments"/>
+        <MenuItem v-for="item in configStore.menuItems"
+                  :path="item.path"
+                  :name="item.name"
+                  :componentName="item.componentName"
+                  @click="configStore.closeVisibleNavbar"
+        />
       </ul>
     </div>
     <div class="navbar__footer">

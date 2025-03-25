@@ -36,10 +36,6 @@
     font-size: 1.875rem;
     font-weight: 600;
     color: var(--text-color-subtitle);
-
-    span {
-      color: var(--skin-color);
-    }
   }
 
   &__text {
@@ -51,7 +47,7 @@
   }
 
   &__typing {
-
+    color: var(--skin-color);
   }
 
   &__cursor {

@@ -6,7 +6,7 @@
           {{ technologiesStore.pageName }}
         </h2>
       </div>
-      <div class="content__row technologies__body scroll">
+      <div class="content__row technologies__body">
         <TechnologiesItem
             v-for="item in technologiesStore.technologies"
             :name="item.name"

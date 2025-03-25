@@ -8,5 +8,5 @@ export const getGradient = (colorFirst: string, colorSecond: string, direction?:
     } else {
         return `linear-gradient(${colorFirst}, ${colorSecond})`
     }
-
 }
+

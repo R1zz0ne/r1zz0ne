@@ -6,11 +6,20 @@ export const useConfigStore = defineStore("configStore", {
         isVisibleNavbar: false,
         isVisibleColorSwitcher: false,
         skin: localStorage.getItem('skin') || 'blue',
+        menuItems: [
+            {path: "/", name: "Главная", componentName: "SVGHome"},
+            {path: "/about", name: "Обо мне", componentName: "SVGUser"},
+            {path: "/technologies", name: "Технологии", componentName: "SVGBrain"},
+            {path: "/contacts", name: "Контакты", componentName: "SVGComments"},
+        ]
     }),
     getters: {},
     actions: {
         invertIsVisibleNavbar() {
             this.isVisibleNavbar = !this.isVisibleNavbar;
+        },
+        closeVisibleNavbar() {
+            this.isVisibleNavbar = false;
         },
         setTheme(theme: string) {
             this.theme = theme;

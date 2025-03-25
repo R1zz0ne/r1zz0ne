@@ -1,5 +1,5 @@
 <template>
-  <div class="education education__container">
+  <div class="qualifications qualifications__container">
     <h3 class="content__subtitle">{{name}}</h3>
     <div class="content__row content__padding timeline">
       <div class="timeline__container">

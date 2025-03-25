@@ -19,6 +19,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  z-index: 10;
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color-navbar);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--skin-color) 60%, transparent);
+  border-radius: 0.5rem;
+  width: 0.5rem;
+  box-shadow: 0 0 0.3rem var(--bg-color-navbar) inset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--skin-color);
+}
 
 body {
   min-width: 320px;
