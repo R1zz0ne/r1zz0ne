@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="home__typing">
   {{ outText }}
   </span>
   <span class="home__cursor" :class="{'home__cursor--blink': cursorBlink}"/>

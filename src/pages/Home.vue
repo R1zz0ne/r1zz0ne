@@ -8,7 +8,7 @@
             <span class="home__name">{{ homeStore.name }}</span>
           </h3>
           <h3 class="home__subtitle">Я
-            <Typing :typingArray="homeStore.typing" class="home__typing"/>
+            <Typing :typingArray="homeStore.typing"/>
           </h3>
         </div>
         <div class="content__row content__row--indent">
